@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO Meta Tags ═══ -->
+  <title>Abdullah Yousaf Khan | Data Scientist · ML Engineer · AI Engineer</title>
+  <meta name="description" content="Abdullah Yousaf Khan — Data Scientist and AI/ML Engineer. M.S. Data Analytics Engineering, George Mason University (GPA 3.91). Expert in RAG systems, LLMs, Python, SQL, machine learning, and data analytics. Open to Data Science, ML Engineering, and Analytics roles." />
+  <meta name="keywords" content="Abdullah Yousaf Khan, Data Scientist, Machine Learning Engineer, AI Engineer, RAG systems, LangChain, FAISS, Python, SQL, NLP, LLMs, Prompt Engineering, XGBoost, TensorFlow, Scikit-Learn, George Mason University, Data Analytics Engineering, Fraud Detection, Digital Twin, Wearable AI, Big Data, Spark, Hadoop, Power BI, Tableau, data analytics, deep learning, predictive modeling" />
+  <meta name="author" content="Abdullah Yousaf Khan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ayk175.github.io/portfolio/" />
+
+  <!-- ═══ Open Graph / LinkedIn / Twitter ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abdullah Yousaf Khan | Data Scientist & AI Engineer" />
+  <meta property="og:description" content="Building production-grade RAG systems, ML pipelines, and analytics products. GPA 3.91 · $2.7M fraud impact · George Mason University." />
+  <meta property="og:image" content="https://ayk175.github.io/portfolio/profile.jpg" />
+  <meta property="og:url" content="https://ayk175.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdullah Yousaf Khan | Data Scientist & AI Engineer" />
+  <meta name="twitter:description" content="RAG systems · LLMs · ML Pipelines · George Mason University M.S. Data Analytics Engineering" />
+  <meta name="twitter:image" content="https://ayk175.github.io/portfolio/profile.jpg" />
+
+  <!-- ═══ Structured Data / JSON-LD (ATS & Google) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdullah Yousaf Khan",
+    "jobTitle": "Data Scientist & AI/ML Engineer",
+    "description": "M.S. Data Analytics Engineering candidate at George Mason University specializing in RAG systems, machine learning, NLP, and data analytics.",
+    "url": "https://ayk175.github.io/portfolio/",
+    "image": "https://ayk175.github.io/portfolio/profile.jpg",
+    "email": "abdullahyousaf175@icloud.com",
+    "sameAs": [
+      "https://github.com/AYK175",
+      "https://www.linkedin.com/in/abdullahyousafkhan/"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "George Mason University",
+        "department": "M.S. Data Analytics Engineering"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Beaconhouse National University",
+        "department": "B.Sc. Computer Science"
+      }
+    ],
+    "knowsAbout": ["Machine Learning", "RAG Systems", "LLMs", "Python", "SQL", "NLP", "Data Science", "Deep Learning", "Prompt Engineering", "Data Analytics"]
+  }
+  </script>
+
+  <!-- ═══ Fonts ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <header class="nav-header" id="navHeader">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">AYK<span class="accent">.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="Abdullah_Khan_Resume.pdf" download class="nav-resume-btn" aria-label="Download resume">
+        <span>Resume</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#about"      class="mobile-link">About</a></li>
+        <li><a href="#skills"     class="mobile-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects"   class="mobile-link">Projects</a></li>
+        <li><a href="#contact"    class="mobile-link">Contact</a></li>
+        <li><a href="Abdullah_Khan_Resume.pdf" download class="mobile-link mobile-resume">⬇ Download Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <!-- Animated canvas background -->
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <!-- Gradient orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- Photo column -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring" aria-hidden="true"></div>
+        <div class="hero-photo-ring hero-photo-ring-2" aria-hidden="true"></div>
+        <img
+          src="profile.jpg"
+          alt="Abdullah Yousaf Khan — Data Scientist & AI Engineer"
+          class="hero-photo"
+          width="320" height="320"
+          loading="eager"
+        />
+        <div class="hero-photo-badge" aria-label="Available for opportunities">
+          <span class="badge-dot"></span>Available for opportunities
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="hero-text">
+        <p class="hero-eyebrow">
+          <span class="mono-tag">&lt;</span>Data Scientist &amp; AI Engineer<span class="mono-tag">/&gt;</span>
+        </p>
+        <h1 class="hero-name">
+          Abdullah<br />
+          <span class="gradient-text">Yousaf Khan</span>
+        </h1>
+        <p class="hero-subtitle">
+          M.S. Data Analytics Engineering · George Mason University
+          <span class="gpa-chip">GPA 3.91</span>
+        </p>
+        <p class="hero-bio">
+          I build production-grade <strong>RAG systems</strong>, <strong>ML pipelines</strong>,
+          and analytics products that turn raw data into measurable impact.
+          Former Product Executive and Business Analyst with hands-on results across
+          healthcare, marketplace tech, and AI research.
+        </p>
+
+        <!-- Social links -->
+        <div class="hero-socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/abdullahyousafkhan/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/AYK175" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:abdullahyousaf175@icloud.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="Abdullah_Khan_Resume.pdf" download class="btn btn-ghost">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Keyword tags for SEO & ATS -->
+        <div class="hero-tags" aria-label="Key skills">
+          <span class="htag">RAG Systems</span>
+          <span class="htag">LLMs</span>
+          <span class="htag">Python</span>
+          <span class="htag">Machine Learning</span>
+          <span class="htag">SQL</span>
+          <span class="htag">NLP</span>
+          <span class="htag">LangChain</span>
+          <span class="htag">FAISS</span>
+          <span class="htag">XGBoost</span>
+          <span class="htag">Prompt Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label">// 01 — About</div>
+      <h2 class="section-title" id="about-heading">Who I Am</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an AI and data engineering professional completing my
+            <strong>Master's in Data Analytics Engineering</strong> at
+            George Mason University (GPA 3.91). My work sits at the intersection
+            of <strong>machine learning, natural language processing, and AI systems</strong> —
+            building things that actually work in production, not just in notebooks.
+          </p>
+          <p>
+            I've built RAG pipelines from scratch, shipped ML models at scale, led
+            product teams at a Series-B tech company, and identified fraud patterns
+            that saved <strong>$2.7M</strong>. I bring both the technical depth and
+            the product instinct to drive real outcomes.
+          </p>
+          <p>
+            Currently serving as <strong>Scrum Master</strong> on my graduate capstone —
+            a full-stack AI product built by a 5-person cross-functional team —
+            while pushing the boundaries of multi-modal RAG and digital twin architectures
+            in independent research.
+          </p>
+        </div>
+
+        <!-- Education block -->
+        <div class="edu-block">
+          <h3 class="edu-block-title">Education</h3>
+          <div class="edu-item">
+            <div class="edu-logo" aria-hidden="true">GMU</div>
+            <div>
+              <p class="edu-school">George Mason University</p>
+              <p class="edu-degree">M.S. Data Analytics Engineering</p>
+              <p class="edu-meta">Expected 2026 · CGPA: <strong class="accent-text">3.91</strong></p>
+              <p class="edu-courses">Data Mining · NLP with Deep Learning · Bayesian AI · Big Data Analytics · Learning From Data · Visualizations with R</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-logo" aria-hidden="true">BNU</div>
+            <div>
+              <p class="edu-school">Beaconhouse National University</p>
+              <p class="edu-degree">B.Sc. Computer Science</p>
+              <p class="edu-meta">2023</p>
+              <p class="edu-courses">OOP · Data Structures · Artificial Intelligence · Data Science &amp; Machine Learning</p>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="cert-group">
+            <span class="cert-pill">🏅 Google Data Analytics Certificate</span>
+            <span class="cert-pill">🏅 IBM Generative AI Specialist</span>
+            <span class="cert-pill">🔄 Salesforce Admin (In Progress)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ SKILLS ═══════════════════════════════════ -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-label">// 02 — Skills</div>
+      <h2 class="section-title" id="skills-heading">Technical Arsenal</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🐍</div>
+          <h3 class="skill-card-title">Languages</h3>
+          <div class="skill-pills">
+            <span class="pill cyan">Python</span>
+            <span class="pill cyan">SQL</span>
+            <span class="pill cyan">R</span>
+            <span class="pill cyan">C++</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🤖</div>
+          <h3 class="skill-card-title">AI / ML</h3>
+          <div class="skill-pills">
+            <span class="pill emerald">RAG Systems</span>
+            <span class="pill emerald">LangChain</span>
+            <span class="pill emerald">FAISS</span>
+            <span class="pill emerald">Prompt Engineering</span>
+            <span class="pill emerald">XGBoost</span>
+            <span class="pill emerald">TensorFlow</span>
+            <span class="pill emerald">Scikit-Learn</span>
+            <span class="pill emerald">Neural Networks</span>
+            <span class="pill emerald">NLP</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">📊</div>
+          <h3 class="skill-card-title">Analytics & BI</h3>
+          <div class="skill-pills">
+            <span class="pill slate">Pandas</span>
+            <span class="pill slate">NumPy</span>
+            <span class="pill slate">SciPy</span>
+            <span class="pill slate">Matplotlib</span>
+            <span class="pill slate">Tableau</span>
+            <span class="pill slate">Power BI</span>
+            <span class="pill slate">Google Analytics</span>
+            <span class="pill slate">A/B Testing</span>
+            <span class="pill slate">RFM Analysis</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⚡</div>
+          <h3 class="skill-card-title">Big Data & Infra</h3>
+          <div class="skill-pills">
+            <span class="pill violet">Apache Spark</span>
+            <span class="pill violet">Hadoop</span>
+            <span class="pill violet">AWS S3</span>
+            <span class="pill violet">Jira</span>
+            <span class="pill violet">YouTrack</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🧠</div>
+          <h3 class="skill-card-title">ML Techniques</h3>
+          <div class="skill-pills">
+            <span class="pill amber">Random Forests</span>
+            <span class="pill amber">Logistic Regression</span>
+            <span class="pill amber">K-Means Clustering</span>
+            <span class="pill amber">Deep Learning</span>
+            <span class="pill amber">Bayesian AI</span>
+            <span class="pill amber">Sentiment Analysis</span>
+            <span class="pill amber">Fraud Detection</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🚀</div>
+          <h3 class="skill-card-title">Product & Process</h3>
+          <div class="skill-pills">
+            <span class="pill rose">Scrum / Agile</span>
+            <span class="pill rose">PRD Writing</span>
+            <span class="pill rose">Stakeholder Mgmt</span>
+            <span class="pill rose">Sprint Planning</span>
+            <span class="pill rose">User Stories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ EXPERIENCE ═══════════════════════════════════ -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-label">// 03 — Experience</div>
+      <h2 class="section-title" id="exp-heading">Where I've Made Impact</h2>
+
+      <div class="timeline">
+
+        <!-- Capstone -->
+        <article class="tl-item reveal">
+          <div class="tl-line" aria-hidden="true"></div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-header">
+              <div>
+                <p class="tl-role">Scrum Master &amp; Product Lead</p>
+                <p class="tl-org">Graduate Capstone · George Mason University</p>
+              </div>
+              <time class="tl-date" datetime="2025">2025 – Present</time>
+            </header>
+            <ul class="tl-bullets">
+              <li>Leading a <strong>5-person cross-functional team</strong> building a full-stack product from scratch — running sprint planning, retrospectives, and daily standups as Scrum Master.</li>
+              <li>Authoring all user stories and tasks in YouTrack; tracking sprint velocity and delivery milestones end-to-end from research to deployable product.</li>
+              <li>Translating academic research requirements into actionable engineering deliverables and driving product roadmap decisions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Dubizzle Labs -->
+        <article class="tl-item reveal">
+          <div class="tl-line" aria-hidden="true"></div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-header">
+              <div>
+                <p class="tl-role">Product Executive</p>
+                <p class="tl-org">Dubizzle Labs</p>
+              </div>
+              <time class="tl-date" datetime="2024-03">Mar 2024 – Aug 2024</time>
+            </header>
+            <!-- Inline stats for this job -->
+            <div class="exp-stats">
+              <div class="exp-stat">
+                <span class="exp-stat-num" data-target="22" data-suffix="%">0%</span>
+                <span class="exp-stat-label">Faster dev turnaround</span>
+              </div>
+              <div class="exp-stat">
+                <span class="exp-stat-num" data-target="30" data-suffix="%">0%</span>
+                <span class="exp-stat-label">Reduced issue resolution time</span>
+              </div>
+              <div class="exp-stat">
+                <span class="exp-stat-num" data-target="5" data-suffix="+">0+</span>
+                <span class="exp-stat-label">Product launches</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Owned end-to-end product lifecycle for two products — a marketplace module and a greenfield build — designing UI mockups and UX flows presented directly to the CEO.</li>
+              <li>Authored PRDs and user stories, translating CEO and stakeholder requirements into Jira engineering tasks; improved development turnaround by <strong>22%</strong>.</li>
+              <li>Led competitive pricing and market analysis across 10+ platforms; optimised support workflows, cutting issue resolution time by <strong>30%</strong>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Alivia Analytics -->
+        <article class="tl-item reveal">
+          <div class="tl-line" aria-hidden="true"></div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-header">
+              <div>
+                <p class="tl-role">Business Analyst</p>
+                <p class="tl-org">Alivia Analytics</p>
+              </div>
+              <time class="tl-date" datetime="2023-09">Sep 2023 – Mar 2024</time>
+            </header>
+            <!-- Inline stats for this job -->
+            <div class="exp-stats">
+              <div class="exp-stat">
+                <span class="exp-stat-num" data-target="2.7" data-suffix="M" data-prefix="$">$0M</span>
+                <span class="exp-stat-label">Fraud savings identified</span>
+              </div>
+              <div class="exp-stat">
+                <span class="exp-stat-num" data-target="25" data-suffix="%">0%</span>
+                <span class="exp-stat-label">Reduced onboarding friction</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Primary client-facing liaison for the <strong>largest healthcare insurance agency onboarding</strong> in company history — led stakeholder meetings and delivered BRDs and User Specification documents.</li>
+              <li>Identified fraud patterns in insurance claims data using <strong>SQL and Python</strong>, contributing to <strong>$2.7M in company savings</strong>.</li>
+              <li>Optimised business workflows and onboarding transitions, reducing friction by <strong>25%</strong> through cross-functional collaboration.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ PROJECTS ═══════════════════════════════════ -->
+  <section class="section section-alt" id="projects" aria-labelledby="proj-heading">
+    <div class="container">
+      <div class="section-label">// 04 — Projects</div>
+      <h2 class="section-title" id="proj-heading">Featured Work</h2>
+      <p class="section-sub">Every card below is a public GitHub repository — click to explore the code.</p>
+
+      <div class="projects-grid">
+
+        <!-- 1 · Medical RAG -->
+        <article class="proj-card reveal" aria-label="Medical Fact-Checker RAG System project">
+          <div class="proj-card-glow" aria-hidden="true"></div>
+          <div class="proj-top">
+            <span class="proj-number" aria-hidden="true">01</span>
+            <div class="proj-badges">
+              <span class="badge-featured">★ Featured</span>
+              <span class="badge-type">RAG · Python</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Medical Fact-Checker RAG System</h3>
+          <p class="proj-desc">
+            A production-grade Retrieval-Augmented Generation pipeline that crawls WHO disease
+            fact sheets in real-time, embeds them into a FAISS vector store, and answers
+            clinical queries using a locally-running Mistral LLM — eliminating hallucinations
+            by grounding every answer in verified source data.
+          </p>
+          <div class="proj-methodology">
+            <span class="meth-label">Methodology</span>
+            <p>Dynamic hub scraping → context-aware document chunking (800–1000 chars) → 768-dim embeddings via mxbai-embed-large → FAISS similarity search → Mistral inference via Ollama → grounded answer synthesis.</p>
+          </div>
+          <div class="proj-stats-row">
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="100" data-suffix="%" data-label="WHO coverage">0%</span>
+              <span>WHO Coverage</span>
+            </div>
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="768" data-suffix="-dim" data-label="Vector dims">0</span>
+              <span>Vector Dims</span>
+            </div>
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="0" data-suffix="" data-label="API calls">0</span>
+              <span>External API Calls</span>
+            </div>
+          </div>
+          <div class="proj-tools">
+            <span class="tool">LangChain</span><span class="tool">FAISS</span><span class="tool">Ollama / Mistral</span><span class="tool">mxbai-embed-large</span><span class="tool">BeautifulSoup4</span><span class="tool">Pandas</span><span class="tool">Python</span>
+          </div>
+          <a href="https://github.com/AYK175/Medical-fact-checker-RAG-System-" target="_blank" rel="noopener" class="proj-cta" aria-label="View Medical RAG System repository on GitHub">
+            View Repository
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </article>
+
+        <!-- 2 · Egocentric Multi-Modal RAG -->
+        <article class="proj-card reveal" aria-label="Egocentric Multi-Modal RAG for Wearable AI project">
+          <div class="proj-card-glow" aria-hidden="true"></div>
+          <div class="proj-top">
+            <span class="proj-number" aria-hidden="true">02</span>
+            <div class="proj-badges">
+              <span class="badge-featured">★ Featured</span>
+              <span class="badge-type">Multi-Modal · AI</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Egocentric Multi-Modal RAG for Wearable AI</h3>
+          <p class="proj-desc">
+            A high-performance Multi-Modal RAG system designed for first-person wearable
+            devices. Ingests egocentric video and text streams, stores semantic representations
+            in a vector database, and delivers real-time context-aware AI responses on-device
+            — purpose-built for the next generation of wearable intelligence.
+          </p>
+          <div class="proj-methodology">
+            <span class="meth-label">Methodology</span>
+            <p>Egocentric stream ingestion (text + visual) → multi-modal embedding → vector DB storage → semantic retrieval → LLM-augmented real-time response synthesis optimised for low-latency wearable inference.</p>
+          </div>
+          <div class="proj-tools">
+            <span class="tool">Multi-Modal LLM</span><span class="tool">Vector Database</span><span class="tool">RAG Pipeline</span><span class="tool">Python</span><span class="tool">Jupyter</span>
+          </div>
+          <a href="https://github.com/AYK175/Egocentric-Multi-Modal-RAG-for-Wearable-AI" target="_blank" rel="noopener" class="proj-cta" aria-label="View Egocentric RAG repository on GitHub">
+            View Repository
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </article>
+
+        <!-- 3 · Context-Aware Digital Twin -->
+        <article class="proj-card reveal" aria-label="Context-Aware Digital Twin project">
+          <div class="proj-card-glow" aria-hidden="true"></div>
+          <div class="proj-top">
+            <span class="proj-number" aria-hidden="true">03</span>
+            <div class="proj-badges">
+              <span class="badge-featured">★ Featured</span>
+              <span class="badge-type">Digital Twin · LLM</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Context-Aware Digital Twin</h3>
+          <p class="proj-desc">
+            An LLM-powered system that learns a user's unique communication style from
+            historical conversations and continuously augments its responses with long-term
+            semantic memory stored in a vector database — creating an evolving AI
+            "digital twin" that becomes more personalised over time.
+          </p>
+          <div class="proj-methodology">
+            <span class="meth-label">Methodology</span>
+            <p>Historical conversation ingestion → communication style extraction → vector memory storage → semantic similarity retrieval → style-conditioned LLM response generation → continuous memory update loop.</p>
+          </div>
+          <div class="proj-tools">
+            <span class="tool">LLM</span><span class="tool">Vector Database</span><span class="tool">Semantic Memory</span><span class="tool">Embedding Models</span><span class="tool">Python</span><span class="tool">Jupyter</span>
+          </div>
+          <a href="https://github.com/AYK175/Context-Aware-Digital-Twin" target="_blank" rel="noopener" class="proj-cta" aria-label="View Digital Twin repository on GitHub">
+            View Repository
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </article>
+
+        <!-- 4 · Fraud Detection -->
+        <article class="proj-card reveal" aria-label="Credit Card Fraud Detection project">
+          <div class="proj-card-glow" aria-hidden="true"></div>
+          <div class="proj-top">
+            <span class="proj-number" aria-hidden="true">04</span>
+            <div class="proj-badges">
+              <span class="badge-featured">★ Featured</span>
+              <span class="badge-type">ML · Analytics</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Credit Card Fraud Detection &amp; Risk Analytics Dashboard</h3>
+          <p class="proj-desc">
+            End-to-end fraud detection pipeline analysing 280K+ real-world transactions.
+            A logistic regression model achieves <strong>91% recall</strong> on suspicious
+            transactions, paired with a Power BI dashboard tracking fraud rates, risk scores,
+            and geographic hotspots — delivering audit-ready KPIs for financial risk teams.
+          </p>
+          <div class="proj-methodology">
+            <span class="meth-label">Methodology</span>
+            <p>SQL + Python EDA on 280K+ transactions → anomalous pattern identification → feature engineering → logistic regression with class-imbalance handling → Power BI risk dashboard with geographic fraud heatmaps.</p>
+          </div>
+          <div class="proj-stats-row">
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="280" data-suffix="K+">0</span>
+              <span>Transactions</span>
+            </div>
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="91" data-suffix="% recall">0</span>
+              <span>Model Recall</span>
+            </div>
+            <div class="proj-stat">
+              <span class="proj-stat-num" data-target="2.7" data-prefix="$" data-suffix="M">$0</span>
+              <span>Real-world Impact</span>
+            </div>
+          </div>
+          <div class="proj-tools">
+            <span class="tool">Python</span><span class="tool">SQL</span><span class="tool">Logistic Regression</span><span class="tool">Scikit-Learn</span><span class="tool">Power BI</span><span class="tool">Pandas</span>
+          </div>
+          <a href="https://github.com/AYK175" target="_blank" rel="noopener" class="proj-cta" aria-label="View GitHub profile">
+            View on GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Additional Projects -->
+      <div class="other-projects-section">
+        <h3 class="other-heading">More Projects</h3>
+        <div class="other-grid">
+          <div class="other-card reveal">
+            <h4>Customer Segmentation &amp; Churn Prediction</h4>
+            <p>RFM analysis + K-means clustering on 50K+ customers → 6 actionable segments. Random Forest churn model at 86% accuracy. Tableau campaign ROI dashboard.</p>
+            <div class="other-tools"><span class="ts">Python</span><span class="ts">Random Forest</span><span class="ts">K-Means</span><span class="ts">Tableau</span></div>
+          </div>
+          <div class="other-card reveal">
+            <h4>RAG-Based Intelligent Q&amp;A System</h4>
+            <p>Full RAG pipeline from scratch — vector embeddings, document chunking, LLM-based synthesis with prompt engineering to minimise hallucinations.</p>
+            <div class="other-tools"><span class="ts">RAG</span><span class="ts">LLM</span><span class="ts">Prompt Engineering</span><span class="ts">Python</span></div>
+          </div>
+          <div class="other-card reveal">
+            <h4>Real Estate Market Valuation Analytics</h4>
+            <p>Regression model predicting property value at 87% R². EDA revealing pricing trends, demand patterns, and neighbourhood valuation differentials.</p>
+            <div class="other-tools"><span class="ts">Python</span><span class="ts">Pandas</span><span class="ts">SQL</span><span class="ts">Regression</span></div>
+          </div>
+          <div class="other-card reveal">
+            <h4>Public Sentiment Intelligence (NLP)</h4>
+            <p>Sentiment classifier on Roman Urdu social media text — 88% accuracy on non-standardised language via custom tokenisation and linguistic feature engineering.</p>
+            <div class="other-tools"><span class="ts">NLP</span><span class="ts">Scikit-Learn</span><span class="ts">Python</span><span class="ts">Text Mining</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════════ -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-wrap">
+      <div class="section-label">// 05 — Contact</div>
+      <h2 class="section-title" id="contact-heading">Let's Build Something</h2>
+      <p class="contact-sub">
+        Open to <strong>Data Science</strong>, <strong>ML Engineering</strong>, and <strong>Analytics</strong> roles globally.
+        I respond within 24 hours.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:abdullahyousaf175@icloud.com" class="contact-card reveal" aria-label="Send email">
+          <div class="cc-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <p class="cc-label">Email</p>
+          <p class="cc-value">abdullahyousaf175@icloud.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/abdullahyousafkhan/" target="_blank" rel="noopener" class="contact-card reveal" aria-label="Connect on LinkedIn">
+          <div class="cc-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <p class="cc-label">LinkedIn</p>
+          <p class="cc-value">abdullahyousafkhan</p>
+        </a>
+        <a href="https://github.com/AYK175" target="_blank" rel="noopener" class="contact-card reveal" aria-label="View GitHub profile">
+          <div class="cc-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <p class="cc-label">GitHub</p>
+          <p class="cc-value">AYK175</p>
+        </a>
+      </div>
+
+      <a href="Abdullah_Khan_Resume.pdf" download class="resume-download-btn reveal" aria-label="Download resume PDF">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Full Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">AYK<span class="accent">.</span></span>
+      <p class="footer-copy">© 2026 Abdullah Yousaf Khan · Data Scientist &amp; AI Engineer</p>
+      <p class="footer-links">
+        <a href="https://github.com/AYK175" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/abdullahyousafkhan/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
