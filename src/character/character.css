@@ -1,0 +1,57 @@
+/* Styles for the 3D character, extracted from the original portfolio.
+   --characterBackground is used by the fade masks below the model so it
+   blends into your page; set it to your page's background color. */
+
+:root {
+  --characterBackground: #070d18;
+}
+
+.character-container {
+  position: relative;
+  width: 105%;
+  height: 100%;
+}
+
+.character-rim {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  background-color: #1b3439;
+  box-shadow: inset 66px 35px 85px 0px rgba(85, 0, 255, 0.65);
+  filter: blur(50px);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%) scale(1.4);
+  opacity: 0;
+}
+
+.character-model {
+  height: calc(100% + 108px);
+  position: absolute;
+  max-width: 1920px;
+  transform: translateX(-50%);
+  width: 100%;
+  left: 50%;
+  z-index: 0;
+  bottom: -15px;
+  pointer-events: inherit;
+}
+
+.character-model canvas {
+  position: relative;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.character-hover {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

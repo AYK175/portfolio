@@ -42,7 +42,7 @@ const sectionObserver = new IntersectionObserver(entries => {
 sections.forEach(s => sectionObserver.observe(s));
 
 /* ── 4. Scroll-reveal animation ──────────────────────────────── */
-const revealEls = document.querySelectorAll('.reveal, .tl-item, .proj-card, .other-card, .contact-card, .skill-card, .section-title, .section-label, .about-text, .edu-item');
+const revealEls = document.querySelectorAll('.reveal, .tl-item, .proj-card, .other-card, .contact-card, .skill-cluster, .section-title, .section-label, .about-text, .edu-item');
 
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach((entry, i) => {
