@@ -32,7 +32,7 @@ export default function setupMonitor(
     if (object.name === "screenlight") {
       object.material.transparent = true;
       object.material.opacity = visible ? 1 : 0;
-      object.material.emissive.set("#C8BFFF");
+      object.material.emissive.set("#9FE8F5");
       if (visible) {
         gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
           emissiveIntensity: () => intensity * 8,

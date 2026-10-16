@@ -17,8 +17,8 @@
   width: 400px;
   height: 400px;
   z-index: 1;
-  background-color: #1b3439;
-  box-shadow: inset 66px 35px 85px 0px rgba(85, 0, 255, 0.65);
+  background-color: #0e2f36;
+  box-shadow: inset 66px 35px 85px 0px rgba(34, 211, 238, 0.65);
   filter: blur(50px);
   border-radius: 50%;
   top: 50%;
@@ -35,7 +35,7 @@
   width: 100%;
   left: 50%;
   z-index: 0;
-  bottom: -15px;
+  bottom: -16px;
   pointer-events: inherit;
 }
 
